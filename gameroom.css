@@ -1,0 +1,290 @@
+:root {
+  --bg-main: #fcf7ee;
+  --bg-alt: #44a963;
+  --bg-dark: #202020;
+  --hover: #307044;
+  --divider: #e0d9d2;
+  --text-header: #363636;
+  --text-secondary: #6b6b6b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+h1 {
+  color: var(--bg-alt);
+}
+
+h2 {
+  color: var(--bg-alt);
+  margin-top: 18px;
+}
+
+header {
+  background-color: var(--bg-main);
+  color: var(--bg-alt);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--divider);
+  border-top: 4px solid var(--bg-alt);
+}
+
+header img {
+  width: 200px;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--bg-alt);
+}
+
+nav a:hover {
+  color: var(--hover);
+}
+
+main {
+  margin-top: 36px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-alt);
+  margin-top: 64px;
+  padding: 24px 28vw 64px;
+  color: var(--bg-main);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--bg-main);
+}
+
+footer a:hover {
+  color: var(--hover);
+}
+
+section h3 {
+  font-size: 15px;
+}
+
+p {
+  line-height: 2;
+}
+
+ul img {
+  width: 48px;
+  height: 48px;
+}
+
+input {
+  width: 24vw;
+  height: 32px;
+  margin-bottom: 12px;
+}
+textarea {
+  width: 24vw;
+  height: 84px;
+  resize: none;
+}
+button {
+  border-style: none;
+  background-color: var(--bg-alt);
+  font-size: 16px;
+  color: var(--bg-main);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--hover);
+}
+
+#imagegames {
+  width: 12vw;
+  height: 12vw;
+}
+
+#header_wrapper {
+  padding: 18px 0;
+  margin: 0 28vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#wrapper {
+  margin: 0 28vw;
+  padding: 0 32px;
+  border-width: 0 1px 0 1px;
+  border-color: var(--divider);
+  border-style: solid;
+}
+
+#textbox_group {
+  margin-bottom: 48px;
+}
+
+#flex_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+#flex_section p {
+  max-width: 18vw;
+}
+#title_paragraph_stack {
+  display: flex;
+  flex-direction: column;
+}
+
+#games_page #flowrows {
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+
+#events_page #flowrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+#events_page li {
+  margin-left: 24px;
+}
+
+#home_page img {
+  width: 16vw;
+  height: 16vw;
+  object-fit: cover;
+}
+
+.text_box {
+  background-color: var(--bg-dark);
+  padding: 4px 8px;
+  color: var(--bg-main);
+}
+
+@media (max-width: 600px) {
+  #wrapper {
+    margin: 0;
+    padding: 12px;
+  }
+
+  #header_wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+
+  #home_page img {
+    width: 100vw;
+    height: 180px;
+  }
+
+  #home_page img :last-child {
+    display: none;
+  }
+
+  #flex_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  #flex_section p {
+    max-width: 100vw;
+  }
+
+  #games_page #flowrows {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text_box {
+    text-align: center;
+  }
+
+  #games_page section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #games_page h2 {
+    text-align: center;
+  }
+
+  #imagegames {
+    width: 128px;
+    height: 128px;
+  }
+
+  #pirannah_plant {
+    display: none;
+  }
+
+  #events_page #flowrows {
+    justify-content: space-between;
+  }
+
+  #flowcolumns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  footer {
+    margin-top: 0;
+    flex-direction: column;
+    padding: 14px 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  textarea {
+    width: 100%;
+  }
+
+  button {
+    font-size: 24px;
+    width: 100%;
+    margin-top: 12px;
+  }
+}
